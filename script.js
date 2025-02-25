@@ -35,7 +35,7 @@ document.querySelectorAll(".cell").forEach(cell => {
         this.textContent = currentSymbol;
 
         if (checkWinner()) {
-            document.getElementById("message").textContent = `${currentPlayer} congratulations You won!`;
+            document.getElementById("message").textContent = `${currentPlayer} congratulations you won!`;
             gameActive = false;
             return;
         }
