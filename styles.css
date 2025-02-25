@@ -1,1 +1,71 @@
-/*  your css code here. If applicable */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.container{
+    margin-top: 50px;
+}
+
+input {
+    margin: 5px;
+    padding: 5px;   
+}
+
+button{
+    margin-top: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.game-board{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: pink;
+}
+
+.cell:hover{
+    background-color: pink;
+}
+
+
+.message{
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+
+.hidden{
+    display: none;
+}
+
+
+#reset {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#reset:hover {
+    background-color: darkred;
+}
