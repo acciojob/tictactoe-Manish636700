@@ -6,8 +6,8 @@ let board = ["", "", "", "", "", "", "", "", ""];
 let gameActive = true;
 
 document.getElementById("submit").addEventListener("click", function () {
-    player1 = document.getElementById("player-1").value.trim();
-    player2 = document.getElementById("player-2").value.trim();
+    player1 = document.getElementById("player1").value.trim();
+    player2 = document.getElementById("player2").value.trim();
 
     console.log(player1, player2);
 
@@ -81,7 +81,7 @@ document.getElementById("reset").addEventListener("click", function () {
     });
     document.getElementById("playerInput").classList.remove("hidden");
     document.getElementById("gameBoard").classList.add("hidden");
-    document.getElementById("player-1").value = "";
-    document.getElementById("player-2").value = "";
+    document.getElementById("player1").value = "";
+    document.getElementById("player2").value = "";
 });
 
